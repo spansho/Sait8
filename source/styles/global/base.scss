@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-aizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-aizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*------------------*/
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.rub:after {
+  content: '₽';
+}
+
+.usd:after {
+  content: '$';
+}
+
+.euro:after {
+  content: '€';
+}
+
+.copyright:before {
+  content: '©';
+}
+
+.icon-menu {
+  display: none;
+  background: transparent;
+}
+
+.dropdown-menu {
+  z-index: 10;
+}
+
+/*@import "https://unpkg.com/swiper/swiper-bundle.min.css";
+
+.slider-swiper-wrapper {
+	position: relative;
+}
+
+.image-slider {}
+.image-slider__wrapper {}
+.image-slider__slide {}
+.image-slider__image {}
+
+.image-slider__image img {
+	max-width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {}
+.swiper-button-next:after {}
+.swiper-button-prev:after {}*/
+
+/* @import "noUiSlider.min.scss"; */
+
+/* @import 'noUiSlider.scss'; */
+
+/* @import "checkbox.scss"; */
+
+.dropdown-menu {
+  font-size: 25px;
+}
+
+.dropdown-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-menu__list li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px 40px 0px 0px;
+}
+
+.dropdown-menu__list li:hover .sub-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu__link {
+  color: #000;
+  margin: 0px 30px 0px 0px;
+}
+
+.dropdown-menu__list > li {
+  padding: 10px 0;
+}
+
+.dropdown-menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.dropdown-menu__wrapper .dropdown-menu__li {
+  padding: 10px 0;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-top: 10px solid #000;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.arrow.active {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.arrow.arrow-modify {
+  right: 5px;
+  top: 17px;
+  border-top: 10px solid #fff;
+}
+
+.arrow.arrow-modify.active {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.sub-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding: 20px 0px 0px 0px;
+  min-width: 250px;
+}
+
+.sub-dropdown-menu li {
+  background: #000;
+}
+
+.sub-dropdown-menu__link {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.sub-dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-sub-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0px 0px 0px 20px;
+  min-width: 250px;
+}
+
+.sub-sub-dropdown-menu__link {
+  padding: 5px 10px;
+  display: inline-block;
+  color: #c1c1c1;
+}
+
+body.mouse .sub-dropdown-menu > li:hover .sub-sub-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.mouse .dropdown-menu__list > li:hover .sub-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.touch .sub-dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.touch .sub-sub-dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.touch .arrow {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.woff"), url("../fonts/Gotham-Bold.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Thin.woff"), url("../fonts/Gotham-Thin.woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.woff"), url("../fonts/Gotham-Book.woff2");
+  font-weight: 400;
+}
+
+body {
+  font-family: Gotham;
+  background: #f1f1f1;
+}
+
+.section-wrapper {
+  background: url("../img/header/background.png") top/cover no-repeat;
+  height: 100vh;
+}
